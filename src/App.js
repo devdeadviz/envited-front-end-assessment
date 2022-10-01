@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChakraProvider, Container } from '@chakra-ui/react';
 import { theme } from './utils';
-import { CreateEvent, Home } from './pages';
+import { CreateEvent, Event, Home } from './pages';
 import { Route, Routes } from 'react-router';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<CreateEvent />} />
+          <Route path="/event" element={<Event />} />
         </Routes>
       </Container>
     </ChakraProvider>
