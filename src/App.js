@@ -1,11 +1,13 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { ChakraProvider, Box } from '@chakra-ui/react';
+import { theme } from './utils';
 
 function App() {
   return (
-    <Box>
-      <h1>Hello</h1>
-    </Box>
+    <ChakraProvider theme={theme}>
+      <Box textAlign="center">
+      </Box>
+    </ChakraProvider>
   );
 }
 
